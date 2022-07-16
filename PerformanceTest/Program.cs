@@ -31,4 +31,6 @@ Parallel.For(0, 100, new ParallelOptions() { MaxDegreeOfParallelism = 4 }, i => 
 
 });
 
-Debug.WriteLine("Average Duration (Seconds): " + Data.Average());
+Console.WriteLine("Average Duration (Seconds): " + Data.Average());
+Console.WriteLine("Max Duration (Seconds): " + Data.Max());
+Console.WriteLine("Min Duration (Seconds): " + Data.Min());
